@@ -1,6 +1,7 @@
 scoreboard players enable @a session3
 scoreboard players set @a timer 0
 scoreboard players set @a s3fail 0
+scoreboard players set @a s3gift 0
 scoreboard players set @a s3reroll 0
 scoreboard players set @a s3success 0
 tag @a remove fail

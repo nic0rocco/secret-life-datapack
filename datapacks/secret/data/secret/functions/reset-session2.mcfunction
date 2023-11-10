@@ -1,6 +1,7 @@
 scoreboard players enable @a session2
 scoreboard players set @a timer 0
 scoreboard players set @a s2fail 0
+scoreboard players set @a s2gift 0
 scoreboard players set @a s2reroll 0
 scoreboard players set @a s2success 0
 tag @a remove fail
