@@ -71,29 +71,6 @@ execute as @s[scores={timer=50,health=42..}] run playsound minecraft:entity.item
 execute as @s[scores={timer=50},tag=20hearts] run summon item ~ ~5 ~-5 {Item:{id:"minecraft:iron_block",Count:1b}}
 execute as @s[scores={timer=50},tag=20hearts] run playsound minecraft:entity.item.pickup ambient @a ~ ~ ~
 
-# Give Hearts
-execute as @s[scores={timer=60,health=..23},tag=20hearts] run title @s title "§a+20 Hearts"
-execute as @s[scores={timer=60,health=20..23},tag=20hearts] run effect give @s instant_health 10 0 true
-execute as @s[scores={timer=60,health=20..27},tag=20hearts] run title @s title "§a+18 Hearts"
-execute as @s[scores={timer=60,health=24..27},tag=20hearts] run effect give @s instant_health 9 0 true
-execute as @s[scores={timer=60,health=28..31},tag=20hearts] run title @s title "§a+16 Hearts"
-execute as @s[scores={timer=60,health=28..31},tag=20hearts] run effect give @s instant_health 8 0 true
-execute as @s[scores={timer=60,health=32..35},tag=20hearts] run title @s title "§a+14 Hearts"
-execute as @s[scores={timer=60,health=32..35},tag=20hearts] run effect give @s instant_health 7 0 true
-execute as @s[scores={timer=60,health=36..39},tag=20hearts] run title @s title "§a+12 Hearts"
-execute as @s[scores={timer=60,health=36..39},tag=20hearts] run effect give @s instant_health 6 0 true
-
-# Announce hearts, up to 10 more
-execute as @s[scores={timer=60,health=58..59}] run title @s title "§a+1 Hearts"
-execute as @s[scores={timer=60,health=56..57}] run title @s title "§a+2 Hearts"
-execute as @s[scores={timer=60,health=54..55}] run title @s title "§a+3 Hearts"
-execute as @s[scores={timer=60,health=52..53}] run title @s title "§a+4 Hearts"
-execute as @s[scores={timer=60,health=50..51}] run title @s title "§a+5 Hearts"
-execute as @s[scores={timer=60,health=48..49}] run title @s title "§a+6 Hearts"
-execute as @s[scores={timer=60,health=46..47}] run title @s title "§a+7 Hearts"
-execute as @s[scores={timer=60,health=44..45}] run title @s title "§a+8 Hearts"
-execute as @s[scores={timer=60,health=42..43}] run title @s title "§a+9 Hearts"
-execute as @s[scores={timer=60,health=40..41}] run title @s title "§a+10 Hearts"
 # Announce hearts, up to 20 more (player rerolled)
 execute as @s[scores={timer=60,health=38..39},tag=20hearts] run title @s title "§a+11 Hearts"
 execute as @s[scores={timer=60,health=36..37},tag=20hearts] run title @s title "§a+12 Hearts"
@@ -106,7 +83,7 @@ execute as @s[scores={timer=60,health=24..25},tag=20hearts] run title @s title "
 execute as @s[scores={timer=60,health=22..23},tag=20hearts] run title @s title "§a+19 Hearts"
 execute as @s[scores={timer=60,health=1..21},tag=20hearts] run title @s title "§a+20 Hearts"
 
-# Increase max health, up to 20 more hearts
+# Increase max health, up to 20 more hearts (player rerolled)
 execute as @s[scores={timer=60,health=20..},tag=20hearts] run attribute @s generic.max_health base set 60
 execute as @s[scores={timer=60,health=19},tag=20hearts] run attribute @s generic.max_health base set 59
 execute as @s[scores={timer=60,health=18},tag=20hearts] run attribute @s generic.max_health base set 58
@@ -128,6 +105,18 @@ execute as @s[scores={timer=60,health=3},tag=20hearts] run attribute @s generic.
 execute as @s[scores={timer=60,health=2},tag=20hearts] run attribute @s generic.max_health base set 42
 execute as @s[scores={timer=60,health=1},tag=20hearts] run attribute @s generic.max_health base set 41
 execute as @s[scores={timer=60},tag=20hearts] run effect give @s minecraft:instant_health 10 0 true
+
+# Announce hearts, up to 10 more
+execute as @s[scores={timer=60,health=58..59}] run title @s title "§a+1 Hearts"
+execute as @s[scores={timer=60,health=56..57}] run title @s title "§a+2 Hearts"
+execute as @s[scores={timer=60,health=54..55}] run title @s title "§a+3 Hearts"
+execute as @s[scores={timer=60,health=52..53}] run title @s title "§a+4 Hearts"
+execute as @s[scores={timer=60,health=50..51}] run title @s title "§a+5 Hearts"
+execute as @s[scores={timer=60,health=48..49}] run title @s title "§a+6 Hearts"
+execute as @s[scores={timer=60,health=46..47}] run title @s title "§a+7 Hearts"
+execute as @s[scores={timer=60,health=44..45}] run title @s title "§a+8 Hearts"
+execute as @s[scores={timer=60,health=42..43}] run title @s title "§a+9 Hearts"
+execute as @s[scores={timer=60,health=40..41}] run title @s title "§a+10 Hearts"
 
 # Increase max health, up to 10 more hearts
 execute as @s[scores={timer=60,health=40},tag=10hearts] run attribute @s generic.max_health base set 60
