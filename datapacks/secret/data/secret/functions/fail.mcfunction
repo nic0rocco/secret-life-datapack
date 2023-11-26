@@ -6,16 +6,16 @@ execute as @s[scores={timer=0,s4fail=0,s4success=0},tag=session4] run tag @s add
 execute as @s[scores={timer=0,s5fail=0,s5success=0},tag=session5] run tag @s add fail
 execute as @s[scores={timer=0,s6fail=0,s6success=0},tag=session6] run tag @s add fail
 execute as @s[scores={timer=0},tag=fail] run scoreboard players set @s timer 1
-execute as @s[scores={timer=1..60}] run particle minecraft:dust 1 0 0 1 ~-2 ~5 ~-5 0.1 0.1 0.1 0.5 8 normal
-execute as @s[scores={timer=1..60}] run particle minecraft:dust 1 0 0 1 ~ ~6 ~-5 0.1 0.1 0.1 0.5 8 normal
-execute as @s[scores={timer=1..60}] run particle minecraft:dust 1 0 0 1 ~1 ~6 ~-5 0.1 0.1 0.1 0.5 8 normal
-execute as @s[scores={timer=1..60}] run particle minecraft:dust 1 0 0 1 ~-1 ~7 ~-5 0.1 0.1 0.1 0.5 8 normal
-execute as @s[scores={timer=1..60}] run particle minecraft:dust 1 0 0 1 ~1 ~7 ~-5 0.1 0.1 0.1 0.5 8 normal
-execute as @s[scores={timer=1..60}] run particle minecraft:dust 1 0 0 1 ~-1 ~8 ~-5 0.1 0.1 0.1 0.5 8 normal
-execute as @s[scores={timer=1..60}] run particle minecraft:dust 1 0 0 1 ~1 ~8 ~-5 0.1 0.1 0.1 0.5 8 normal
-execute as @s[scores={timer=1..60}] run particle minecraft:dust 1 0 0 1 ~-1 ~9 ~-5 0.1 0.1 0.1 0.5 8 normal
-execute as @s[scores={timer=1..60}] run particle minecraft:dust 1 0 0 1 ~ ~9 ~-5 0.1 0.1 0.1 0.5 8 normal
-execute as @s[scores={timer=1..60}] run particle minecraft:dust 1 0 0 1 ~2 ~10 ~-5 0.1 0.1 0.1 0.5 8 normal
+execute as @s[scores={timer=1..60}] run particle minecraft:dust 1 0 0 1 ~4 ~10 ~-2 0.1 0.1 0.1 0.5 8 normal
+execute as @s[scores={timer=1..60}] run particle minecraft:dust 1 0 0 1 ~4 ~12 ~-1 0.1 0.1 0.1 0.5 8 normal
+execute as @s[scores={timer=1..60}] run particle minecraft:dust 1 0 0 1 ~4 ~13 ~-1 0.1 0.1 0.1 0.5 8 normal
+execute as @s[scores={timer=1..60}] run particle minecraft:dust 1 0 0 1 ~4 ~14 ~-1 0.1 0.1 0.1 0.5 8 normal
+execute as @s[scores={timer=1..60}] run particle minecraft:dust 1 0 0 1 ~4 ~14 ~ 0.1 0.1 0.1 0.5 8 normal
+execute as @s[scores={timer=1..60}] run particle minecraft:dust 1 0 0 1 ~4 ~11 ~ 0.1 0.1 0.1 0.5 8 normal
+execute as @s[scores={timer=1..60}] run particle minecraft:dust 1 0 0 1 ~4 ~11 ~1 0.1 0.1 0.1 0.5 8 normal
+execute as @s[scores={timer=1..60}] run particle minecraft:dust 1 0 0 1 ~4 ~12 ~1 0.1 0.1 0.1 0.5 8 normal
+execute as @s[scores={timer=1..60}] run particle minecraft:dust 1 0 0 1 ~4 ~13 ~1 0.1 0.1 0.1 0.5 8 normal
+execute as @s[scores={timer=1..60}] run particle minecraft:dust 1 0 0 1 ~4 ~15 ~2 0.1 0.1 0.1 0.5 8 normal
 execute as @s[scores={timer=60,deaths=2},tag=redtask] run function secret:red-fail
 execute as @s[scores={timer=60,s1fail=0,s1success=0},tag=session1] run function secret:fail1
 execute as @s[scores={timer=60,s2fail=0,s2success=0},tag=session2] run function secret:fail2
