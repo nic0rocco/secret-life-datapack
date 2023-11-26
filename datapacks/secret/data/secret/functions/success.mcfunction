@@ -6,7 +6,7 @@ execute as @s[scores={timer=0,s4fail=0,s4success=0},tag=session4] run tag @s add
 execute as @s[scores={timer=0,s5fail=0,s5success=0},tag=session5] run tag @s add success
 execute as @s[scores={timer=0,s6fail=0,s6success=0},tag=session6] run tag @s add success
 execute as @s[scores={timer=0},tag=success] run scoreboard players set @s timer 1
-execute as @s[scores={timer=1..60}] run particle minecraft:enchant ~ ~5 ~-5 1 1 1 3 3 normal
+execute as @s[scores={timer=1..60}] run particle minecraft:enchant ~ ~5 ~ 1 1 1 3 3 normal
 execute as @s[scores={timer=20}] run playsound minecraft:entity.ender_dragon.death player @a ~ ~ ~
 execute as @s[scores={timer=60,deaths=2},tag=redtask] run function secret:red-success
 execute as @s[scores={timer=60,s1fail=0,s1success=0},tag=session1] run function secret:success1
