@@ -55,9 +55,9 @@ team modify red color red
 team modify red friendlyFire true
 
 # Starting Platform
-fill ~16 ~ ~16 ~-16 ~20 ~-16 minecraft:air
-fill ~16 ~-1 ~16 ~-16 ~-1 ~-16 minecraft:gravel
-fill ~16 ~-2 ~16 ~-16 ~-10 ~-16 minecraft:stone
+fill ~19 ~ ~17 ~-15 ~20 ~-16 minecraft:air
+fill ~19 ~-1 ~17 ~-15 ~-1 ~-16 minecraft:gravel
+fill ~19 ~-2 ~17 ~-15 ~-10 ~-16 minecraft:stone
 
 ## Secret Keeper
 place template secret:keeper ~-15 ~ ~-16
