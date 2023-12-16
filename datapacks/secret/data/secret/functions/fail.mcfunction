@@ -19,6 +19,7 @@ execute as @s[scores={timer=1..60}] run particle minecraft:dust 1 0 0 1 ~4.5 ~11
 execute as @s[scores={timer=1..60}] run particle minecraft:dust 1 0 0 1 ~4.5 ~12.5 ~1.5 0.1 0.1 0.1 0.5 8 normal
 execute as @s[scores={timer=1..60}] run particle minecraft:dust 1 0 0 1 ~4.5 ~13.5 ~1.5 0.1 0.1 0.1 0.5 8 normal
 execute as @s[scores={timer=1..60}] run particle minecraft:dust 1 0 0 1 ~4.5 ~15 ~2 0.1 0.1 0.1 0.5 8 normal
+execute as @s[scores={timer=20}] run playsound minecraft:entity.ender_dragon.death player @a ~ ~ ~
 execute as @s[scores={timer=60,deaths=2},tag=redtask] run function secret:red-fail
 execute as @s[scores={timer=60,s1fail=0,s1success=0},tag=session1] run function secret:fail1
 execute as @s[scores={timer=60,s2fail=0,s2success=0},tag=session2] run function secret:fail2
