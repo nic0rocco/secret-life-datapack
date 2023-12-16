@@ -68,6 +68,8 @@ team modify yellow friendlyFire false
 team add red
 team modify red color red
 team modify red friendlyFire true
+team add gray
+team modify gray color gray
 
 # Starting Platform
 fill ~19 ~ ~17 ~-15 ~20 ~-16 minecraft:air
